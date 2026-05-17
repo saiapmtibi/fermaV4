@@ -481,22 +481,23 @@
                 </ul>`
         },
         'eolian': {
-            titlu: "Termenul Aerodinamic & Praguri de Stres Mecanic",
+            titlu: "Forța Aerodinamică (Drag) & Praguri Dinamice BBCH",
             descriere: `
                 <strong>Principiu de funcționare:</strong><br>
-                Acțiunea vântului în platformă este monitorizată pe mai multe direcții: intensificarea transpirației, efectul convectiv de răcire a suprafeței fructelor și daunele mecanice produse structurii pomilor, corelate cu scala Beaufort.<br><br>
+                Modelul calculează impactul structural pe baza forței aerodinamice de tracțiune (Drag) și a momentului de încovoiere. Deoarece forța crește proporțional cu pătratul vitezei, sistemul utilizează exclusiv <strong>rafala maximă absolută</strong> (viteză instantanee), nu viteza medie orară. Fenomenul de rezonanță structurală (Factorul de Amplificare Dinamică - DAF) poate crește momentul de forță la baza trunchiului cu 50–200% în timpul rafalelor[cite: 5, 8, 10, 17, 30, 31, 33].<br><br>
                 
-                <strong>Praguri Mecanice validate agronomic:</strong><br>
-                • Vânt < 3 m/s &rarr; Risc Neglijabil.<br>
-                • Vânt 3–5 m/s &rarr; Risc Moderat (afectează rozetele florale și limitează strict activitatea zborului entomofil, mai ales al albinelor).<br>
-                • Vânt 5–8 m/s &rarr; Risc Semnificativ (frecarea și scuturarea fructelor, risc de microplăgi).<br>
-                • Vânt > 8 m/s &rarr; Risc Sever (vătămare structurală la nivelul plantației).<br><br>
+                <strong>Praguri Dinamice (validate pe stadii BBCH):</strong><br>
+                Vulnerabilitatea structurală și fiziologică se adaptează automat fenofazei curente[cite: 36, 37]:<br>
+                • <strong>Repaus Vegetativ (BBCH 00-09):</strong> Rezistență maximă (lemn dormant). Risc Moderat la > 10 m/s (periculos dacă se suprapune cu zăpadă/gheață). Risc Ridicat la > 18 m/s (rupere ramuri scheletice)[cite: 38, 39, 41].<br>
+                • <strong>Înflorire (BBCH 60-69):</strong> Vulnerabilitate extremă. Zborul albinelor (<em>Apis mellifera</em>) este perturbat de la 2.5 m/s. Risc Moderat la > 5 m/s (abscisie petale, deshidratare stigmate). Risc Ridicat la > 7 m/s (oprirea practică a polenizării)[cite: 46, 49, 50].<br>
+                • <strong>Legarea Fructelor (BBCH 71-75):</strong> Risc Moderat la > 8 m/s, Risc Ridicat la > 10 m/s (stimularea mecanică induce producția de etilenă endogenă, amplificând căderea fiziologică - June Drop)[cite: 53, 55].<br>
+                • <strong>Pre-Recoltare (BBCH 81-89):</strong> Impact economic maxim. Risc Moderat la > 5 m/s (frecare fruct-ramură urmată de brunificare subcuticulară). Risc Ridicat la > 8 m/s (abscisie mecanică, pierderi >30%)[cite: 58, 61].<br><br>
                 
                 <strong>Referințe Bibliografice:</strong><br>
                 <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 0.9rem;">
-                    <li style="margin-bottom: 8px;">Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). <em>Crop evapotranspiration-Guidelines for computing crop water requirements-FAO Irrigation and drainage paper 56</em>. FAO, Rome.</li>
-                    <li style="margin-bottom: 8px;">Brandle, J. R., Hodges, L., & Zhou, X. H. (2004). Windbreaks in North American agricultural systems. <em>Agroforestry Systems, 61</em>, 65-78. <a href="https://doi.org/10.1023/B:AGFO.0000028990.31801.96" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">https://doi.org/10.1023/B:AGFO.0000028990.31801.96</a></li>
-                    <li style="margin-bottom: 8px;">Li, L., Shen, H., Yi, S., & Liu, H. (2014). Modeling apple surface temperature dynamics based on weather data. <em>Sensors, 14</em>(11), 20217-20234. <a href="https://doi.org/10.3390/s141120217" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">https://doi.org/10.3390/s141120217</a></li>
+                    <li style="margin-bottom: 8px;">Abeles, F. B., Morgan, P. W., & Saltveit, M. E. (1992). <em>Ethylene in Plant Biology</em> (2nd ed.). Academic Press.</li>
+                    <li style="margin-bottom: 8px;">Gardiner, B., Berry, P., & Moulia, B. (2016). Review: Wind impacts on plant growth, mechanics and damage. <em>Plant Science, 245</em>, 94-118. <a href="https://doi.org/10.1016/j.plantsci.2016.01.006" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">https://doi.org/10.1016/j.plantsci.2016.01.006</a></li>
+                    <li style="margin-bottom: 8px;">Moore, J. R., & Maguire, D. A. (2005). Natural sway frequencies and damping ratios of trees. <em>Trees, 19</em>(4), 387-394. <a href="https://doi.org/10.1007/s00468-004-0387-y" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">https://doi.org/10.1007/s00468-004-0387-y</a></li>
                 </ul>`
         },
         'teren': {
